@@ -133,30 +133,30 @@ p {
 /* slide out nav menu styles */
 
 .nav-container {
-  padding-top: 10%;
+  padding-top: 20%;
 }
 
 .nav-links {
   width: 250px;
   text-align: center;
-  margin-left: auto;
+  margin-left: 10;
   margin-right: auto;
 }
 
 .nav-links ul {
   margin-top: 15%;
-  text-align: center;
-  padding-top: 10%;
+  text-align: left;
+  padding-top: 20%;
 }
 
 .nav-links a {
   color: #ffffff;
-  font-size: 30px;
-  line-height: 2.5;
+  font-size: 20px;
+  line-height: 3;
   font-weight: bold;
-  text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
+  text-decoration: rgb(92, 52, 1);
+  margin: left 10px;
+  margin-right: 10px;
 }
 
 .nav-links a:hover {
@@ -180,7 +180,7 @@ p {
   margin-top: 5px;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   content: "";
   opacity: 0;
   -webkit-transition: width 0.6s, opacity 0.8s;
@@ -383,7 +383,7 @@ p {
 .content-slide {
   margin-left: auto;
   margin-right: auto;
-  max-width: 800rem;
+  max-width: 800px;
 }
 
 .content-slide img {
@@ -391,8 +391,9 @@ p {
 }
 
 .fp-controlArrow.fp-next {
+ 
   border-color: transparent transparent transparent #ff6363 !important;
-  right: 5% !important;
+  right: 6%; !important;
 }
 
 .fp-controlArrow.fp-prev {
@@ -402,7 +403,7 @@ p {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: rgba(0, 0, 0, 0.62) !important;
+  background: rgba(22, 22, 22, 0.62) !important;
 }
 
 /* contact us styles */
@@ -483,10 +484,10 @@ label {
   padding: 12px;
   min-width: 200px;
   border-radius: 2px;
-  border: 2px solid #ff6363;
+  border: 2px solid #da4a08;
   text-align: center;
   font-size: 1em;
-  color: #ff6363;
+  color: #e724029c;
   background-color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -494,7 +495,7 @@ label {
 }
 
 #submit:hover {
-  background-color: #ff6363;
+  background-color: #d84805;
   color: white;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -523,7 +524,7 @@ label {
 }
 
 .social-links a:hover {
-  color: #ff6363;
+  color: #2a7ecc;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
