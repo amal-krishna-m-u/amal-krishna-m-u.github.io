@@ -78,13 +78,14 @@ p {
 
 .nav-brand {
   position: fixed;
-  left: 0;
+  left: 2%;
   z-index: 600;
-  padding: 10px;
+  padding: 1%;
 }
 
 .nav-brand img {
-  width: 50px;
+  width:11%;
+  height:11% ;
 }
 
 .fa-bars {
