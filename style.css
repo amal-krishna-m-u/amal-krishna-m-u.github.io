@@ -392,12 +392,12 @@ p {
 
 .fp-controlArrow.fp-next {
  
-  border-color: transparent transparent transparent #ff6363 !important;
+  border-color: transparent transparent transparent #000000 !important;
   right: 6%; !important;
 }
 
 .fp-controlArrow.fp-prev {
-  border-color: transparent #ff6363 transparent transparent !important;
+  border-color: transparent #000000 transparent transparent !important;
   left: 1%!important;
 }
 
