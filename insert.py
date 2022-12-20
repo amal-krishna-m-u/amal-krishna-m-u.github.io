@@ -1,47 +1,24 @@
+#!/usr/bin/python
+
 import psycopg2
 
-# Connect to the database
-conn = psycopg2.connect(
-    host="mydatabase-instance.cis9c214rls8.ap-south-1.rds.amazonaws.com",
-    database="bda_prediction",
-    user="amal123",
-    password="Sinister003."
-)
+conn = psycopg2.connect(database = "testdb", user = "postgres", password = "pass123", host = "127.0.0.1", port = "5432")
+print "Opened database successfully"
 
-# Create a cursor to execute SQL statements
 cur = conn.cursor()
 
+cur.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \
+      VALUES (1, 'Paul', 32, 'California', 20000.00 )");
 
+cur.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \
+      VALUES (2, 'Allen', 25, 'Texas', 15000.00 )");
 
+cur.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \
+      VALUES (3, 'Teddy', 23, 'Norway', 20000.00 )");
 
-# Define the table
-table = '''
-CREATE TABLE IF NOT EXISTS houses (
-    name TEXT,
-    rooms INTEGER,
-    location TEXT,
-    value REAL
-)
-'''
+cur.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \
+      VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 )");
 
-# Execute the query
-cur.execute(table)
-
-# Commit the changes
 conn.commit()
-
-# Insert the form data into the database
-name = request.form['name']
-rooms = request.form['rooms']
-location = request.form['location']
-value = request.form['value']
-
-sql = "INSERT INTO houses (name, rooms, location, value) VALUES (%s, %s, %s, %s)"
-cur.execute(sql, (name, rooms, location, value))
-
-# Commit the changes to the database
-conn.commit()
-
-# Close the cursor and connection
-cur.close()
+print "Records created successfully";
 conn.close()
