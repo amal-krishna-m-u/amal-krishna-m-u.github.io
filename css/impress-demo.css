@@ -258,14 +258,21 @@ a:focus {
 
 #itsmeamalmullangath {
     padding: 0;
+    
 }
 
-#itsmeamalmullangath .try {
-    font-size: 64px;
-    position: absolute;
-    top: -0.5em;
-    left: 1.5em;
+#welcome {
+    padding: 0;
+ 
 
+}
+#itsmeamalmullangath .highlight {
+    font-size: 104px;
+    position: absolute;
+    top: -0.6em;
+    left: 0.5em;
+    
+    font-family: 'Zeyada', cursive;
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
     -ms-transform:     translateZ(20px);
@@ -273,18 +280,79 @@ a:focus {
     transform:         translateZ(20px);
 }
 
-#itsmeamalmullangath h1 {
-    font-size: 180px;
 
+
+#welcome .try {
+    font-size: 180px;
+    
+    position: absolute;
+    top: -0.5em;
+    left: 0.75em;
+    
+ 
+    
+
+    -webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(20px);
+    -ms-transform:     translateZ(20px);
+    -o-transform:      translateZ(20px);
+    transform:         translateZ(20px);
+
+
+    -webkit-transform: rotate(10deg);
+    -moz-transform:    rotate(10deg);
+    -ms-transform:     rotate(10deg);
+    -o-transform:      rotate(10deg);
+    transform:         rotate(-5deg);
+
+    
+
+
+}
+   
+#welcome .image {
+    width:200px;
+    height:200px;
+    position: absolute;
+    left: 45px;
+    top: 40px;
+    
+
+        background-image: url('https://pixeljoint.com/files/icons/full/goku_revamp16.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+
+}
+
+
+
+#welcome h1 {
+    font-size: 180px;
+    
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
     -ms-transform:     translateZ(50px);
     -o-transform:      translateZ(50px);
     transform:         translateZ(50px);
 }
+#itsmeamalmullangath h2 {
+    font-size: 200px;
+    font-family: 'Zeyada', cursive;
+    -webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(50px);
+    -ms-transform:     translateZ(50px);
+    -o-transform:      translateZ(50px);
+    transform:         translateZ(50px);
+    color:rgb(255, 0, 0);
+
+}
 
 #itsmeamalmullangath .footnote {
     font-size: 32px;
+    font-family: 'Press Start 2P', cursive;
+    color:rgb(4, 0, 255);
 }
 
 /*
@@ -294,22 +362,30 @@ a:focus {
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
 #big {
+    display: block;
     width: 600px;
     text-align: center;
-    font-size: 60px;
-    line-height: 1;
+    font-size: 90px;
+    line-height: 90px;
+    font-family: cursive;
+    color: black;
 }
 
 #big strong,
 #big b {
     display: block;
-    font-size: 250px;
-    line-height: 250px;
+    font-size: 50px;
+    line-height: 100px;
+    font-family: cursive;
+    color: black;
 }
 
 #big .thoughts {
-    font-size: 90px;
-    line-height: 150px;
+    font-size: 64px;
+    line-height: 1px;
+    font-family: cursive;
+    color: #254b6e;
+    ;
 }
 
 /*
