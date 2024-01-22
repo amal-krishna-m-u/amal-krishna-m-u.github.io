@@ -1,4 +1,6 @@
 {
+
+
   "name": "amal-krishna-m-u.github.io",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +9,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    
   },
   "dependencies": {
     "react": "^18.2.0",
