@@ -1,0 +1,234 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+
+
+/* color scheme
+5F634F white text
+37646D white text
+A0A48E black text
+AAAD99 black text
+
+
+5DA0AC black text 
+A0C7CF black text */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+
+body, html {
+  background-color: #0b0c10;
+  color: #c5c6c7;
+  margin: 0;
+  padding: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 91%;
+  background-color: #0b0c10;
+  padding: 1.3em;
+  z-index: 1000; /* Ensure the navigation stays above other content */
+}
+
+.logo {
+  color: #45a29e;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+nav {
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul li {
+  padding: 0.2em;
+  margin-right: 15px;
+}
+
+/* ... Rest of your existing styles */
+
+a {
+  text-decoration: none;
+  color: #45a29e;
+  
+}
+a:hover{
+  color:#66fcf1;
+}
+
+b{
+
+
+  color:#66fcf1;
+  font-family: 'Nunito';
+  font-weight: bold;
+  font-size: 1.1em;
+  
+
+}
+
+p{
+  line-height: 1.5em;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.2em;
+  align-items: center;
+  text-align: center;
+  margin-top: 3em;
+
+
+
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+
+}
+.project-h1{
+  padding-left: 1em;
+}
+
+.project ul {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  background-color: #1f2833;
+  border-radius: 1em;
+  overflow: hidden; /* Hide overflow for smooth animations */
+}
+
+.card {
+  padding: 1em;
+  transform-origin: top; /* Set transform origin to top for rotate animation */
+  animation: moveDown 1s ease-out, rotate 1s ease-out;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+.project-container {
+  overflow: hidden; /* Hide overflow for smooth animations */
+}
+
+.project-details {
+  padding: 1em;
+  background-color: #45a29e;
+  color: #1f2833;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  transform-origin: bottom; /* Set transform origin to bottom for details animation */
+  animation: moveUp 1s ease-out;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+h3 {
+  font-family: 'Nunito';
+  font-weight: bold;
+  font-size: 1.3em;
+  color: azure;
+  
+}
+
+
+s{
+  text-decoration: underline;
+  color: #45a29e;
+}
+
+
+.spaceit{
+  margin: .5em;
+}
+
+
+img {
+
+  max-width: 10em;
+  display: block;
+  margin: 3em auto; /* This will center the image horizontally */
+border-radius: 3em;
+border: #0b0c10;
+/* Adjust the values based on your preference */
+box-shadow: 0 2px 20px rgba(102, 252, 241, 0.8); /* Border color: #66fcf1 with 0.8 opacity, Adjust the values as needed */
+}
