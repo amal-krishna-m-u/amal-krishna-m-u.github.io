@@ -4,13 +4,6 @@ import './App.css';
 import dp from './assets/dp.jpg'
 
 
-
-
-
-function sendEmail() {
-  window.location.href = 'mailto:amalkrishnam3@gmail.com';
-}
-
 function App() {
   const [count, setCount] = useState(0);
 
